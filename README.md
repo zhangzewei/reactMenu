@@ -1,4 +1,9 @@
-## 关于Menu组建的构思
+## 启动方法
+```shell
+yarn install && yarn start
+```
+
+## 关于Menu组件的构思
 #### 示例代码
 ```js
 import React, { Component } from 'react';
@@ -67,13 +72,13 @@ export default Demo;
 
 | 参数  | 说明 | 类型 | 默认值 |
 | ---- | ---- | ---- | ---- |
-| className | 根节点css样式 | obj | `ks-menu ks-menu__horizontal` |
+| className | 根节点css样式 | object | `ks-menu ks-menu__horizontal` |
 | mode | 菜单类型，现在支持`inline` `horizontal` | string | 'inline' |
-| style | 根节点样式 | obj | - |
+| style | 根节点样式 | object | - |
 | onClick | 点击 menuitem 调用此函数，参数为 `{item, key, keyPath}` | function | - |
-| selectedKeys | 当前选中的菜单项 key 数组 | arr | todo |
-| openKeys | 当前展开的 SubMenu 菜单项 key 数组 | arr | todo |
-| defaultOpenKeys | 初始展开的 SubMenu 菜单项 key 数组 | arr | todo |
+| selectedKeys | 当前选中的菜单项 key 数组 | array | todo |
+| openKeys | 当前展开的 SubMenu 菜单项 key 数组 | array | todo |
+| defaultOpenKeys | 初始展开的 SubMenu 菜单项 key 数组 | array | todo |
 
 #### MenuItem
 + 结构
@@ -91,8 +96,8 @@ export default Demo;
 
 | 参数  | 说明 | 类型 | 默认值 |
 | ---- | ---- | ---- | ---- |
-| className | 根节点css样式 | obj | `ks-menuitem` |
-| style | 根节点样式 | obj | - |
+| className | 根节点css样式 | object | `ks-menuitem` |
+| style | 根节点样式 | object | - |
 | disabled | 是否禁用	| bool | false |
 | key | item 的唯一标志(必须有且不能一样) | string | - |
 
@@ -121,10 +126,10 @@ export default Demo;
 
 | 参数  | 说明 | 类型 | 默认值 |
 | ---- | ---- | ---- | ---- |
-| className | 根节点css样式 | obj | - |
-| style | 根节点样式 | obj | - |
+| className | 根节点css样式 | object | - |
+| style | 根节点样式 | object | - |
 | disabled | 是否禁用	| bool | false |
-| arrow | 右侧图标 | React.Element | - |
+| arrayow | 右侧图标 | React.Element | - |
 | key | item 的唯一标志(必须有且不能一样) | string | - |
 | title | 子菜单标题 | String or React.Element | - |
 | children | 子菜单的菜单项 | (MenuItem or SubMenu)[] | - |

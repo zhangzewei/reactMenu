@@ -74,10 +74,8 @@ module.exports = {
         test: /\.less$/,
         loader: ExtractTextPlugin.extract(
           'isomorphic-style-loader',
-          'style-loader!css-loader!less-loader'
+          'css-loader!postcss-loader!less-loader'
         ),
-        include: modulesPath,
-        exclude: srcPath,
       },
       {
         test: /\.(png|jpg|jpeg|gif|woff|woff2)$/,
