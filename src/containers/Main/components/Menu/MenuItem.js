@@ -42,8 +42,8 @@ export default class MenuItem extends Component {
     const props = this.props;
     let mouseEvent = {};
     const menuClassNames = {
-      ['ks-menuitem']: true,
-      ['ks-disabled']: props.disabled,
+      ['zzw-menuitem']: true,
+      ['zzw-disabled']: props.disabled,
     };
     const style = {
       ...props.style,

@@ -67,7 +67,7 @@ export default Demo;
 
 | 参数  | 说明 | 类型 | 默认值 |
 | ---- | ---- | ---- | ---- |
-| className | 根节点css样式 | obj | `ks-menu ks-menu__horizontal` |
+| className | 根节点css样式 | obj | `zzw-menu zzw-menu__horizontal` |
 | mode | 菜单类型，现在支持`inline` `horizontal` | string | 'inline' |
 | style | 根节点样式 | obj | - |
 | onClick | 点击 menuitem 调用此函数，参数为 `{item, key, keyPath}` | function | - |
@@ -91,7 +91,7 @@ export default Demo;
 
 | 参数  | 说明 | 类型 | 默认值 |
 | ---- | ---- | ---- | ---- |
-| className | 根节点css样式 | obj | `ks-menuitem` |
+| className | 根节点css样式 | obj | `zzw-menuitem` |
 | style | 根节点样式 | obj | - |
 | disabled | 是否禁用	| bool | false |
 | key | item 的唯一标志(必须有且不能一样) | string | - |
@@ -105,7 +105,7 @@ export default Demo;
     style={this.props.style}
   >
     <div
-      className='ks-submenu-title'
+      className='zzw-submenu-title'
       onClick={(e) => this.onTitleClick(this.state.open, e)}
     >
       <span>{props.title}</span>

@@ -49,7 +49,7 @@ export default class Menu extends Component {
     return React.cloneElement(child, newChildProps);
   }
   render() {
-    const classname = `ks-menu ks-menu__${this.props.mode} ${this.props.className}`;
+    const classname = `zzw-menu zzw-menu__${this.props.mode} ${this.props.className}`;
     return (
       <ul
         onClick={this.onClick}

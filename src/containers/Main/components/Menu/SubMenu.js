@@ -112,7 +112,7 @@ export default class SubMenu extends Component {
     }
     return (
       <ul
-        className="ks-submenu ks-menu"
+        className="zzw-submenu zzw-menu"
         {...baseProps}
       >
         {children}
@@ -122,19 +122,19 @@ export default class SubMenu extends Component {
 
   renderArrow() {
     const arrow = !this.props.arrow ?
-      <span className="ks-arrow"></span> : this.props.arrow;
+      <span className="zzw-arrow"></span> : this.props.arrow;
     return arrow;
   }
 
   render() {
     const props = this.props;
     const rotateArrow = {
-      ['ks-arrow__warp']: true,
+      ['zzw-arrow__warp']: true,
       ['rotate']: this.state.open,
     };
     const titleClassNames = {
-      ['ks-submenu-title']: true,
-      ['ks-disabled']: props.disabled,
+      ['zzw-submenu-title']: true,
+      ['zzw-disabled']: props.disabled,
     };
     const style = {
       ...props.style,
@@ -146,7 +146,7 @@ export default class SubMenu extends Component {
         onMouseLeave: this.onMouseLeave,
         onMouseEnter: this.onMouseEnter,
       };
-      // only works in title, not outer li
+      // only worzzw in title, not outer li
       titleMouseEvents = {
         onMouseEnter: this.onTitleMouseEnter,
         onMouseLeave: this.onTitleMouseLeave,
@@ -156,7 +156,7 @@ export default class SubMenu extends Component {
     style.paddingLeft = props.inlineIndent * props.level;
     return (
       <li
-        className={`ks-submenu ${props.className}`}
+        className={`zzw-submenu ${props.className}`}
         {...mouseEvents}
       >
         <div
